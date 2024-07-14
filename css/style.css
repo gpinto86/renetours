@@ -41,7 +41,7 @@ section {
 .btn{
   margin-top: 1rem;
   display: inline-block;
-  border: 0.2rem solid #10221b;
+  border: 0.2rem solid #E9EBED;
   color: #10221b;
   cursor: pointer;
   background: none;
@@ -50,7 +50,7 @@ section {
 }
 
 .btn:hover {
-  background: #10221b;
+  background: #13714C;
   color: #fff;
 }
 
@@ -254,20 +254,21 @@ section {
 }
 
 .home .box .content span {
-  font-size: 4rem;
-  color: #10221b;
+  font-size: 6rem;
+  color: #13714C;
+  text-transform: none;
 }
 
 .home .box .content h3 {
   font-size: 6rem;
-  color: #219150;
+  color: #3AB67D;
   padding-top: .5rem;
   text-transform: uppercase;
 }
 
 .home .box .content p {
   line-height: 2;
-  color: #10221b;
+  color: #E9EBED;
   font-size: 1.5rem;
   padding: 1rem 0;
   text-transform: none
@@ -276,7 +277,7 @@ section {
 .swiper-button-next::after,
 .swiper-button-prev::after {
   font-size: 3rem;
-  color: #10221b;
+  color: #E9EBED;
 }
 
 .category .box-container {
