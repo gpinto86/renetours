@@ -361,13 +361,13 @@ section {
   line-height: 2;
   text-transform: none
 }
-
-
-
 .packages-container{
   background: #eee;
 }
-
+.packages-container img{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
 .packages .box-container {
   display: -ms-grid;
   display: grid;
@@ -375,7 +375,6 @@ section {
       grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
   gap: 1.5rem;
 }
-
 .packages .box-container .box {
   text-align: center;
   background: #fff;
@@ -384,24 +383,19 @@ section {
           box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   border-radius: .5rem;
 }
-
 .packages .box-container .box:hover {
-  background: #10221b;
+  background: #E9EBED;
 }
-
 .packages .box-container .box:hover .content > * {
-  color: #fff;
+  color: #13714C;
 }
-
 .packages .box-container .box:hover .btn {
   border-color: #fff;
 }
-
 .packages .box-container .box:hover .btn:hover {
   background: #fff;
   color: #10221b;
 }
-
 .packages .box-container .box .image {
   height: 25rem;
   overflow: hidden;
@@ -409,7 +403,6 @@ section {
   padding-bottom: 0;
   border-radius: .5rem;
 }
-
 .packages .box-container .box .image img {
   height: 100%;
   width: 100%;
@@ -417,23 +410,19 @@ section {
      object-fit: cover;
   border-radius: .5rem;
 }
-
 .packages .box-container .box .content {
   padding: 2rem;
 }
-
 .packages .box-container .box .content h3 {
   font-size: 2rem;
   color: #10221b;
 }
-
 .packages .box-container .box .content p {
   font-size: 1.5rem;
   color: #10221b;
   padding: 1rem 0;
   line-height: 2;
 }
-
 .packages .box-container .box .content ul {
   font-size: 1.5rem;
   color: #10221b;
@@ -446,6 +435,77 @@ section {
   font-size: 2rem;
   color: #219150;
 }
+.card{
+  position: relative;
+  width: 300px;
+  height: 350px;
+  margin: 15px;
+  display: grid;
+}
+.card .face{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: .5s;
+}
+.card .front{
+  transform: perspective(600px)rotateY(0deg);
+  box-shadow: 0 5px 10px #000;
+}
+.card .front img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card .front h3{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  color: #f8f8f8;
+  background: rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+.card .back{
+  transform: perspective(600px) rotateY(180deg);
+  background: rgb(3, 35, 54);
+  padding: 15px;
+  color: #F3F3F3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: 0 5px 10px #000;
+}
+.card .back .link{
+  border-top: solid 1px #F3F3F3;
+  height: 50px;
+  line-height: 50px;
+}
+.card .back .link a{
+  color: #F3F3F3;
+}
+.card .back h3{
+  font-size: 30px;
+  margin-top: 20px;
+  letter-spacing: 2px;
+}
+.card .back p{
+  letter-spacing: 1px;
+}
+
+.card:hover .front{
+  transform: perspective(600px) rotateY(180deg);
+} 
+
+.card:hover .back{
+  transform: perspective(600px) rotateY(360deg);
+} 
 
 .services-container{
   background: #eee;
@@ -468,7 +528,7 @@ section {
 }
 
 .services .box-container .box:hover {
-  background: #10221b;
+  background: #13714C;
 }
 
 .services .box-container .box:hover img {
@@ -621,6 +681,7 @@ table {
   width: 100%;
   border-collapse: collapse;
   margin: 20px 0;
+  font-size: 1.4rem;
 }
 th, td {
   padding: 10px;
@@ -639,6 +700,15 @@ tr:hover {
 }
 .header th {
   text-align: left;
+}
+
+.table-container a{
+  font-size: 1.5rem;
+  color: #3AB67D;
+}
+.table-container a:hover{
+  font-size: 2rem;
+  color: #13714C;
 }
 .footer {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../images/footer-bg.jpg) no-repeat;
